@@ -1,0 +1,68 @@
+/* reset css */
+html{
+    font-size: 62.5% ;
+}
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+}
+
+
+h1, h2, h3, h4, p, figure ul, ol { 
+    
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    
+}
+*{
+    box-sizing: border-box;
+}
+
+/* theme */
+
+:root{
+    --color-primary: #3B5998;
+    --color-secondary: #8B9DC3;
+    --color-complementary: #DFE3EE;
+    --color-text: #F7F7F7;
+}
+header > h1::before{
+    content: url(../asset/android-chrome-192x192.png);
+    vertical-align: 1rem;
+    margin-right: .5rem;
+}
+header{
+    background-color: var(--color-primary);
+    padding: 1rem
+}
+header h1, header h2{
+    line-height: 6.5rem;
+    text-align: center;
+    color: var(--color-text);
+    font-weight: lighter;
+}
+header h2{
+    line-height: normal;
+}
+main, footer{
+    max-width: 120rem;
+    margin: 5rem auto;
+}
+section h2{
+    line-height: 4.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 1rem;
+
+}
+section ul li {
+    display: inline-block;
+}
+section  P{
+    padding: 1rem;
+    line-height: 1.6;
+}
+footer *{
+    text-align: center;
+}
