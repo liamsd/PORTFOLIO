@@ -1,11 +1,13 @@
 /* reset css */
 html{
     font-size: 62.5% ;
+    background: #000 url("https://cdn.planonsoftware.com/static/shared/media/cache/1910_Blog_Technology%20trend%20in%202022.fd9ac20530f5ecdd9ea3b19f4682277c.jpg")no-repeat fixed center center / cover;
 }
 body{
     font: 1.6rem sans-serif;
     margin: 0;
 }
+
 
 
 h1, h2, h3, h4, p, figure ul, ol { 
@@ -29,7 +31,7 @@ h1, h2, h3, h4, p, figure ul, ol {
 }
 header > h1::before{
     content: url(../asset/android-chrome-192x192.png);
-    vertical-align: 1rem;
+    vertical-align: -1rem;
     margin-right: .5rem;
 }
 header{
@@ -45,9 +47,11 @@ header h1, header h2{
 header h2{
     line-height: normal;
 }
+
 main, footer{
     max-width: 120rem;
     margin: 5rem auto;
+    background-color: var(--color-complementary);
 }
 section h2{
     line-height: 4.5rem;
@@ -55,6 +59,11 @@ section h2{
     color: var(--color-text);
     padding: 1rem;
 
+}
+section ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
 }
 section ul li {
     display: inline-block;
@@ -65,4 +74,5 @@ section  P{
 }
 footer *{
     text-align: center;
+    line-height: 3.5rem;
 }
